@@ -1,4 +1,3 @@
-require 'rubygems' if RUBY_VERSION < '1.9.0'
 require 'puppetlabs_spec_helper/rake_tasks'
 require 'puppet-lint/tasks/puppet-lint'
 
@@ -10,7 +9,7 @@ PuppetLint.configuration.send('disable_documentation')
 PuppetLint.configuration.send('disable_single_quote_string_with_variables')
 PuppetLint.configuration.ignore_paths = ["spec/**/*.pp", "pkg/**/*.pp", "vender/**/*.pp"]
 
-PuppetSyntax.exclude_paths = ["pkg/**/*", "vender/**/*"]
+PuppetSyntax.exclude_paths = ["spec/**/*", "pkg/**/*", "vender/**/*"]
 PuppetSyntax.hieradata_paths = ["**/data/**/*.yaml", "hieradata/**/*.yaml", "hiera*.yaml"]
 
 desc "Check puppet metadata.json with metadata-json-lint."
