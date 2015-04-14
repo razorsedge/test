@@ -25,9 +25,7 @@ This Puppet module manages the installation and configuration of the [Operating 
 
 ##Module Description
 
-If applicable, this section should have a brief description of the technology the module integrates with and what that integration enables. This section should answer the questions: "What does this module *do*?" and "Why would I use it?"
-    
-If your module has a range of functionality (installation, configuration, management, etc.) this is the time to mention it.
+This Puppet module manages the installation and configuration of the [Operating System Specific Packages](http://packages.vmware.com/) for VMware Tools.  OSPs are an alternative to the existing mechanism used to install VMware Tools through the VMware vSphere™ Client. With OSPs you can use the native update mechanisms of your operating system to download, install, and manage VMware Tools. With OSPs you can manage VMware Tools from the virtual machine as you would other standard software. VMware Tools OSPs occupy a smaller amount of disk space than the tar installer used with vSphere Client, which makes package installation or uninstallation fast.
 
 ##Setup
 
