@@ -3,15 +3,9 @@ source ENV['GEM_SOURCE'] || "https://rubygems.org"
 group :development, :unit_tests do
   gem 'rake', '10.5.0',                       :require => false
   gem 'rspec', '~> 2.0',                      :require => false
-  #gem 'rake', '10.5.0',                       :require => false if RUBY_VERSION =~ /^1\./
-  #gem 'rake',                                 :require => false if RUBY_VERSION =~ /^2\./
-  #gem 'rspec', '~> 3.1.0',                    :require => false if RUBY_VERSION =~ /^1\./
-  #gem 'rspec',                                :require => false if RUBY_VERSION =~ /^2\./
   gem 'rspec-puppet', '>= 2.1.0',             :require => false
   gem 'puppetlabs_spec_helper', '~> 1.2',     :require => false
-  gem 'puppet-lint', '<= 2.1.0',              :require => false if RUBY_VERSION =~ /^1\.8/
-  gem 'puppet-lint', '>= 1.1.0',              :require => false if RUBY_VERSION =~ /^1\.9/
-  gem 'puppet-lint', '>= 1.1.0',              :require => false if RUBY_VERSION =~ /^2\./
+  gem 'puppet-lint', '~> 2.0',                :require => false
   gem 'json', '~> 1.8',                       :require => false if RUBY_VERSION =~ /^1\./
   gem 'json',                                 :require => false if RUBY_VERSION =~ /^2\./
   gem 'json_pure', '~> 1.8',                  :require => false if RUBY_VERSION =~ /^1\.8/
