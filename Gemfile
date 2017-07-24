@@ -18,6 +18,7 @@ group :development, :unit_tests do
   gem 'puppet-lint-unquoted_string-check', :require => false
   gem 'puppet-lint-empty_string-check',    :require => false
   gem 'puppet-lint-leading_zero-check',    :require => false
+  gem 'rspec-puppet-facts',                :require => false
 end
 
 gem 'puppet', ENV['PUPPET_GEM_VERSION'], :require => false
